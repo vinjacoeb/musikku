@@ -13,9 +13,11 @@ Vector Space Model(VSM) adalah model invormation retrival yang berbasis token un
 3.1 TF/IDF
 
 Untuk setiap term tidak hanya dilihat ada atau tidak ada dalam dokumen namun diberi bobot menggunakan TF atau TF-IDF. TF-IDF merupakan skema pembobotan yang sering digunakan dalam VSM bersama dengan cosine similarity untuk menentukan kesamaan antara dua buah dokumen. TF (Term Frequency) merupakan frekuensi kemunculan term (t) pada dokumen (d). DF (Document Frequency) merupakan banyaknya dokumen dimana suatu term (t) muncul. Atau sebuah dokumen mengandung term(t).
+
 3.2 Cosine Similarity
 
 Fungsi similarity adalah fungsi yang menerima dua buah objek dan mengembalikan nilai kemiripan (similarity) antara kedua objek tersebut berupa bilangan riil. Umumnya, nilai yang dihasilkan oleh fungsi similarity berkisar pada interval [0...1]. Namun, ada juga yang menghasilkan nilai yang berada diluar interval tersebut. Maka untuk memetakannya dapat dilakukan normalisasi. Cosine similarity adalah perhitungan kesamaan antara dua vector n dimensi dengan mencari kosinus dari sudut diantara keduanya dansering digunakan untuk membandingkan dokumen dalam text mining.
+
 3.3 N-gram
 
 Penggunaan N-Gram untuk pendeteksian bahasa didasarkan pada asumsi bahwa pola distribusi N-gram suatu bahasa bersifat unik karena berkaitan dengan frekuensi penggunaan huruf, atau pasangan huruf, baik vokal maupun konsonan dari suatu bahasa yang umumnya berbeda dengan bahasa lain [6]. Gambar 3 merupakan alur dari pendeteksian Bahasa menggunakan N-Gram, N-Gram memiliki beberapa pendekatan dalam memotong karakter [10]. Untuk membantu dalam pengambilan potongan kata berupa karakter huruf tersebut, padding dilakukan dengan memberikan karakter “_” di awal dan akhir kata.
