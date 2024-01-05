@@ -1,0 +1,28 @@
+<!-- musikku/templates/musikku/musik_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Recommended Musik</title>
+</head>
+<body>
+    <h1>Top 5 Recommended Musik</h1>
+
+    <form method="post" action="{% url 'musik_list' %}">
+        {% csrf_token %}
+        <label for="search_input">Cari Judul Lagu:</label>
+        <input type="text" id="search_input" name="search_input" required>
+        <button type="submit">Cari</button>
+    </form>
+
+    <p>{{ musik_Judul }}</p>
+    {% for recommendation in recommendations %}
+        <div>
+            <p>{{ recommendation.Penyanyi }} - {{ recommendation.Judul }}</p>
+            <p>{{ recommendation.Lirik }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
