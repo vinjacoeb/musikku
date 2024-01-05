@@ -1,1 +1,1 @@
-web: gunicorn musik.wsgi
+web: gunicorn musikku.wsgi
