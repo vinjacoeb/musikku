@@ -14,7 +14,24 @@ import os
 import secrets
 from pathlib import Path
 
+import dj_database_url
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+# Before using your Heroku app in production, make sure to review Django's deployment checklist:
+# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
+
+# Django requires a unique secret key for each Django app, that is used by several of its
+# security features. To simplify initial setup (without hardcoding the secret in the source
+# code) we set this to a random value every time the app starts. However, this will mean many
+# Django features break whenever an app restarts (for example, sessions will be logged out).
+# In your production Heroku apps you should set the `DJANGO_SECRET_KEY` config var explicitly.
+# Make sure to use a long unique value, like you would for a password. See:
+# https://docs.djangoproject.com/en/5.0/ref/settings/#std-setting-SECRET_KEY
+# https://devcenter.heroku.com/articles/config-vars
+# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get(
     "DJANGO_SECRET_KEY",
     default=secrets.token_urlsafe(nbytes=64),
@@ -38,6 +55,8 @@ if IS_HEROKU_APP:
 else:
     ALLOWED_HOSTS = []
 
+
+# Application definition
 
 INSTALLED_APPS = [
     "django.contrib.admin",
