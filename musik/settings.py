@@ -11,52 +11,21 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 import os
-import secrets
 from pathlib import Path
 
-import dj_database_url
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Before using your Heroku app in production, make sure to review Django's deployment checklist:
+# Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
-# Django requires a unique secret key for each Django app, that is used by several of its
-# security features. To simplify initial setup (without hardcoding the secret in the source
-# code) we set this to a random value every time the app starts. However, this will mean many
-# Django features break whenever an app restarts (for example, sessions will be logged out).
-# In your production Heroku apps you should set the `DJANGO_SECRET_KEY` config var explicitly.
-# Make sure to use a long unique value, like you would for a password. See:
-# https://docs.djangoproject.com/en/5.0/ref/settings/#std-setting-SECRET_KEY
-# https://devcenter.heroku.com/articles/config-vars
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get(
-    "DJANGO_SECRET_KEY",
-    default=secrets.token_urlsafe(nbytes=64),
-)
-
-# The `DYNO` env var is set on Heroku CI, but it's not a real Heroku app, so we have to
-# also explicitly exclude CI:
-# https://devcenter.heroku.com/articles/heroku-ci#immutable-environment-variables
-IS_HEROKU_APP = "musikku-info" in os.environ and not "CI" in os.environ
+SECRET_KEY = "django-insecure-!t@&4)3+q@#8o=r0#a4aj422jp$b@@0-fr!6wl7w6hf$r2r&6y"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-if not IS_HEROKU_APP:
-    DEBUG = True
+DEBUG = True
 
-# On Heroku, it's safe to use a wildcard for `ALLOWED_HOSTS``, since the Heroku router performs
-# validation of the Host header in the incoming HTTP request. On other platforms you may need
-# to list the expected hostnames explicitly to prevent HTTP Host header attacks. See:
-# https://docs.djangoproject.com/en/5.0/ref/settings/#std-setting-ALLOWED_HOSTS
-if IS_HEROKU_APP:
-    ALLOWED_HOSTS = ["*"]
-else:
-    ALLOWED_HOSTS = []
-
-
-# Application definition
+ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "django.contrib.admin",
