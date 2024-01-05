@@ -1,2 +1,2 @@
 web: gunicorn musikku-info.wsgi
-web: node server.js
+web: node manage.py
