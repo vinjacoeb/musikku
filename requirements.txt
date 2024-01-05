@@ -4,3 +4,5 @@ Django==5.0.1
 gunicorn==21.2.0
 whitenoise==6.6.0
 scikit-learn==0.24.2
+numpy==1.21.2
+scipy==1.7.3
