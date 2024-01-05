@@ -25,7 +25,8 @@ SECRET_KEY = "django-insecure-!t@&4)3+q@#8o=r0#a4aj422jp$b@@0-fr!6wl7w6hf$r2r&6y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['musikku-info-dcab28ccf745.herokuapp.com', 'pencarian.com']
+
 
 INSTALLED_APPS = [
     "django.contrib.admin",
