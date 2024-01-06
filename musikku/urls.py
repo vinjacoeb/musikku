@@ -1,5 +1,5 @@
 from django.urls import path
-from musikku.views import musik_list, musik_recommender
+from .views import musik_list, musik_recommender
 
 urlpatterns = [
     path('', musik_list, name='musik_list'),
