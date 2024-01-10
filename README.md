@@ -27,4 +27,10 @@ Penggunaan N-Gram untuk pendeteksian bahasa didasarkan pada asumsi bahwa pola di
 
 4. Uji Performa
 
+ (1)dengan menggunakan keyword "bad", maka judul lagu yang muncul sebagai rekomendasi antara lain:
+ 1. ed sheeran & justin bieber - i don't care
+ 2. ed sheeran - bad habits
+ 3. post malone & swae lee - sunflower
+ 4. xxxtentacion - moonlight
+ 5. drake - god's plan![IMG_1176](https://github.com/vinjacoeb/musikku/assets/92255523/db7f2bad-a1ae-4f89-90bd-a04338938f24)
 
