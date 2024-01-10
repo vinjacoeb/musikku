@@ -27,7 +27,7 @@ Penggunaan N-Gram untuk pendeteksian bahasa didasarkan pada asumsi bahwa pola di
 
 4. Uji Performa
 
- (1)dengan menggunakan keyword "bad", maka judul lagu yang muncul sebagai rekomendasi antara lain:
+ Dengan menggunakan keyword "bad boy", maka judul lagu yang muncul sebagai rekomendasi antara lain:
  1. ed sheeran & justin bieber - i don't care
  2. ed sheeran - bad habits
  3. post malone & swae lee - sunflower
