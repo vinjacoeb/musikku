@@ -1,3 +1,6 @@
+link: musikku-info-dcab28ccf745.herokuapp.com
+
+
 1. Dataset
 
 Dataset yang digunakan diperoleh melalui teknik crawling dari penyedia musik. Dataset berisi Penyanyi,Judul,Lirik, yang telah dipreprocessing sehingga menjadi datamusik.csv yang tersimpan pada /musikku/datamusik.csv
@@ -23,3 +26,5 @@ Fungsi similarity adalah fungsi yang menerima dua buah objek dan mengembalikan n
 Penggunaan N-Gram untuk pendeteksian bahasa didasarkan pada asumsi bahwa pola distribusi N-gram suatu bahasa bersifat unik karena berkaitan dengan frekuensi penggunaan huruf, atau pasangan huruf, baik vokal maupun konsonan dari suatu bahasa yang umumnya berbeda dengan bahasa lain.  N-Gram memiliki beberapa pendekatan dalam memotong karakter. Untuk membantu dalam pengambilan potongan kata berupa karakter huruf tersebut, padding dilakukan dengan memberikan karakter “_” di awal dan akhir kata.
 
 4. Uji Performa
+
+
